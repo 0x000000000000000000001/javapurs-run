@@ -806,6 +806,9 @@
       "spec": {
         "path": "../javapurs-spec"
       },
+      "spec-discovery": {
+        "path": "../javapurs-spec-discovery"
+      },
       "st": {
         "path": "../javapurs-st"
       },
@@ -879,7 +882,11 @@
     "assert": {
       "type": "local",
       "path": "../javapurs-assert",
-      "dependencies": []
+      "dependencies": [
+        "console",
+        "effect",
+        "prelude"
+      ]
     },
     "bifunctors": {
       "type": "registry",
@@ -891,6 +898,19 @@
         "newtype",
         "prelude",
         "tuples"
+      ]
+    },
+    "catenable-lists": {
+      "type": "local",
+      "path": "../javapurs-catenable-lists",
+      "dependencies": [
+        "control",
+        "foldable-traversable",
+        "lists",
+        "maybe",
+        "prelude",
+        "tuples",
+        "unfoldable"
       ]
     },
     "console": {
@@ -1038,7 +1058,22 @@
     "free": {
       "type": "local",
       "path": "../javapurs-free",
-      "dependencies": []
+      "dependencies": [
+        "catenable-lists",
+        "control",
+        "distributive",
+        "either",
+        "exists",
+        "foldable-traversable",
+        "invariant",
+        "lazy",
+        "maybe",
+        "prelude",
+        "tailrec",
+        "transformers",
+        "tuples",
+        "unsafe-coerce"
+      ]
     },
     "functions": {
       "type": "local",
@@ -1119,6 +1154,7 @@
       "dependencies": [
         "control",
         "foldable-traversable",
+        "invariant",
         "prelude"
       ]
     },
