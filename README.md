@@ -1,5 +1,10 @@
 # purescript-run
 
+## JVM tests
+
+`./bin/test` selects `run` in the [common isolated runner](../javapurs/docs/testing.md#port-particulier), preserving this checkout and its outputs.
+Use `./bin/test --help` for options and `./bin/test --clean` to rebuild the backend. The linked guide covers prerequisites, Java target/runtime settings and retained failure logs.
+
 [![Latest release](http://img.shields.io/github/release/natefaubion/purescript-run.svg)](https://github.com/natefaubion/purescript-run/releases)
 [![Build status](https://github.com/natefaubion/purescript-run/workflows/CI/badge.svg?branch=master)](https://github.com/natefaubion/purescript-run/actions?query=workflow%3ACI+branch%3Amaster)
 
